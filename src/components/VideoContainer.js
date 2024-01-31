@@ -11,7 +11,7 @@ const VideoContainer = ({page}) => {
   const YOUTUBE_VIDEOS_API =
   page === "feed"
     ? `${process.env.REACT_APP_YOUTUBE_VIDEOS_API}${GOOGLE_API_KEY}`
-    : `https://cors-anywhere.herokuapp.com/https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${page}&type=video&key=${process.env.REACT_APP_GOOGLE_API_KEY}`;
+    : `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${page}&type=video&key=${process.env.REACT_APP_GOOGLE_API_KEY}`;
 
   const [videos, setVideos] = useState([]);
 
